@@ -38,6 +38,8 @@ attr_accessor :total, :discount
   end
 
   def void_last_transaction
+    x = @cart.last[:price]
+    @total -= x
     @cart.pop
   end
 
