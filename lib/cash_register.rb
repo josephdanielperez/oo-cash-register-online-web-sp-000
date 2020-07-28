@@ -41,6 +41,10 @@ attr_accessor :total, :discount
     x = @cart.last[:price]
     @total -= x
     @cart.pop
+
+    if @cart == []
+      @total = 0
+    end
   end
 
 end
