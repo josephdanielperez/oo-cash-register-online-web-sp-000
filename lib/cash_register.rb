@@ -30,6 +30,7 @@ attr_accessor :total, :discount
   def items
     items = []
     @cart.each do |item_info|
+      for qty in 1..item_info[:quantity]
       items << item_info[:name]
     end
     items
