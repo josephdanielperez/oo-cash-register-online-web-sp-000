@@ -28,7 +28,7 @@ attr_accessor :total, :discount
   end
 
   def items
-    @cart[0]
+    @cart[][0]
   end
 
 end
