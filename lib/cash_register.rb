@@ -16,7 +16,7 @@ attr_accessor :total, :discount
     item_info[:quantity] = quantity
 
     @@CART << item_info
-    @total = @total + price * quantity
+    @total = @total + (price * quantity)
   end
 
 end
