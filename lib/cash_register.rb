@@ -28,7 +28,10 @@ attr_accessor :total, :discount
   end
 
   def items
-    @cart[][0]
+    items = []
+    @cart.each do |item_info|
+      items << item_info[:name]
+    end
   end
 
 end
