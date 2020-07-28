@@ -8,8 +8,7 @@ attr_accessor :total, :discount
   end
 
   def add_item(item, total)
-    @cart << item
-    @total + total
+    
   end
 
 end
