@@ -32,6 +32,7 @@ attr_accessor :total, :discount
     @cart.each do |item_info|
       items << item_info[:name]
     end
+    items
   end
 
 end
